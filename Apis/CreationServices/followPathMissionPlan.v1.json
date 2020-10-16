@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "observationMissionPlan",
+    "version": "1.0",
+    "description": "Plan for FollowPath Mission - Sent by TMM",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/observationMissionRequest": {
+      "post": {
+        "summary": "ObservationMissionPlan",
+        "operationId": "post-observationMissionPlan",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../../models/MissionPlans/followPathMissionPlan.v1.json"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "../../models/Services Ent/requestFollowPathMission.v1.json"
+              }
+            }
+          }
+        },
+        "description": "Plan for FollowPath Mission - Sent by TMM"
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "securitySchemes": {}
+  }
+}

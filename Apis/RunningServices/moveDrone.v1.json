@@ -1,0 +1,49 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "moveDrone",
+    "version": "1.0",
+    "description": "Request from TGS in order to move a specific drone - Sent by TGS",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/moveDrone": {
+      "post": {
+        "summary": "MoveDrone",
+        "operationId": "post-observationMissionPlan",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../../models/generalResponse.v1.json"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "../../models/Services Ent/PointOfRoute.v1.json"
+              }
+            }
+          }
+        },
+        "description": "Request from TGS in order to move a specific drone - Sent by TGS"
+      },
+      "parameters": []
+    }
+  },
+  "components": {
+    "schemas": {},
+    "securitySchemes": {}
+  }
+}

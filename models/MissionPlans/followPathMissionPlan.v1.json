@@ -1,0 +1,16 @@
+{
+  "title": "followPathMissionPlan",
+  "type": "object",
+  "description": "Plan for following a path of GPS point",
+  "properties": {
+    "observationPlans": {
+      "type": "array",
+      "items": {
+        "$ref": "./observationMissionPlan.v1.json"
+      }
+    }
+  },
+  "required": [
+    "observationPlans"
+  ]
+}

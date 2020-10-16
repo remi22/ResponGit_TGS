@@ -1,0 +1,13 @@
+{
+  "title": "scanMissionPlan",
+  "type": "object",
+  "description": "Plan for scanning an area",
+  "properties": {
+    "waypoints": {
+      "$ref": "../Polygon.v1.json"
+    }
+  },
+  "required": [
+    "waypoints"
+  ]
+}

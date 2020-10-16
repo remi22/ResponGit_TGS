@@ -1,0 +1,12 @@
+{
+  "title": "moveDrone",
+  "type": "object",
+  "properties": {
+    "geoPoint": {
+      "$ref": "./GeoPoint.v1.json"
+    },
+    "orientation": {
+      "type": "number"
+    }
+  }
+}

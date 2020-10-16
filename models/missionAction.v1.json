@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "title": "missionAction",
+  "properties": {
+    "action": {
+      "type": "string",
+      "enum": [
+        "Start",
+        "Stop"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "servoingMissionPlan",
+  "type": "object",
+  "description": "Plan for starting to track a target",
+  "properties": {
+    "accepted": {
+      "type": "boolean",
+      "description": "boolean that indicates if target that user wants to be tracked has been found or not"
+    }
+  },
+  "required": [
+    "accepted"
+  ]
+}

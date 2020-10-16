@@ -1,0 +1,32 @@
+{
+  "title": "observationMissionPlan",
+  "type": "object",
+  "description": "Plan for observing a GPS point",
+  "properties": {
+    "droneGoalPosition": {
+      "$ref": "../GeoPoint.v1.json"
+    },
+    "minDistToTarget": {
+      "type": "number",
+      "description": "Minimum distance between observation point and drone goal position"
+    },
+    "maxDistToTarget": {
+      "type": "number",
+      "description": "Maximum distance between observation point and drone goal position"
+    },
+    "MinAngleRelativeToGround": {
+      "type": "number",
+      "description": ""
+    },
+    "MaxAngleRelativeToGround": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "droneGoalPosition",
+    "minDistToTarget",
+    "maxDistToTarget",
+    "MinAngleRelativeToGround",
+    "MaxAngleRelativeToGround"
+  ]
+}

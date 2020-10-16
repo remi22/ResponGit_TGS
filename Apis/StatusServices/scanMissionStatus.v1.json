@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "observationMissionPlan",
+    "version": "1.0",
+    "description": "Plan for Observation Mission - Sent by TMM",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/observationMissionRequest": {
+      "post": {
+        "summary": "scanMissionStatus",
+        "operationId": "post-observationMissionPlan",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../../models/generalResponse.v1.json"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "../../models/missionAction.v1.json"
+              }
+            }
+          }
+        },
+        "description": "Plan for Observation Mission - Sent by TMM"
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "securitySchemes": {}
+  }
+}
