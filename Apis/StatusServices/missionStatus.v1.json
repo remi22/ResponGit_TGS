@@ -3,7 +3,7 @@
   "info": {
     "title": "observationMissionPlan",
     "version": "1.0",
-    "description": "Plan for Observation Mission - Sent by TMM",
+    "description": "Plan for FollowPath Mission - Sent by TMM",
     "contact": {}
   },
   "servers": [
@@ -12,9 +12,9 @@
     }
   ],
   "paths": {
-    "/observationMissionRequest": {
+    "/missionStatus": {
       "post": {
-        "summary": "ServoingMissionStatus",
+        "summary": "missionStatus",
         "operationId": "post-observationMissionPlan",
         "responses": {
           "200": {
@@ -32,13 +32,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "../../models/missionAction.v1.json"
+                "$ref": "../../models/missionUpdate.v1.json"
               }
             }
           }
         },
-        "description": "Plan for Observation Mission - Sent by TMM"
-      }
+        "description": "Status mission update - Sent by TMM"
+      },
+      "parameters": []
     }
   },
   "components": {
