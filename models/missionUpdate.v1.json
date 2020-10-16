@@ -16,11 +16,13 @@
         "CommRelayFR"
       ]
     },
-    "action": {
+    "missionStatus": {
       "type": "string",
       "enum": [
-        "Start",
-        "Stop"
+        "Pending",
+        "InProgress",
+        "Completed",
+        "Cancelled"
       ]
     }
   }
