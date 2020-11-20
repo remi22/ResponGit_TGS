@@ -12,9 +12,7 @@
         "FollowPath",
         "Scan",
         "Servoing",
-        "CommRelayFixed",
-        "CommRelayArea",
-        "CommRelayFollow"
+        "CommRelay"
       ]
     },
     "missionStatus": {
